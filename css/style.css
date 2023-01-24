@@ -58,6 +58,10 @@ p {
     padding: 0 0 3rem 0;
     background-size: cover;
 }
+.greeting__foto {
+    max-width: 387px;
+    width: 100%;
+}
 .about {
     padding: 3rem 0;
 }
@@ -78,6 +82,8 @@ p {
 .skills__foto {
     background: rgba(255, 255, 255, 0.2);
     border-radius: 25px;
+    max-width: 470px;
+    width: 100%;
 }
 .education {
     padding: 3rem 0;
@@ -118,4 +124,26 @@ p {
 .footer {
     background-color: #1F2235;
     padding: 3rem 0;
+}
+
+@media (max-width: 1248px) {
+    .wrap {
+        padding: 0;
+    }
+    .row {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        padding: 1rem 1.5rem;
+        flex-wrap: wrap;
+    }
+    .about, .skills, .education, .footer {
+        padding: 3rem 1rem;
+    }
+}
+@media (max-width: 680px) {
+    .skills__description, .education__description-list {
+        padding-left: 0;
+    }
 }

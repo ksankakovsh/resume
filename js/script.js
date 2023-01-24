@@ -37,3 +37,15 @@ var isScrolling = false;
    
         return ((top >= 0) && (bottom <= window.innerHeight));
       }
+// scroll 
+const arrLinks = document.querySelectorAll('a[href^="#"]');
+for (let link of arrLinks) {
+    link.addEventListener('click', function (e) {
+        e.preventDefault();
+        const id = link.getAttribute('href');
+        document.querySelector(id).scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+        });
+    });
+};
