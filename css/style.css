@@ -146,4 +146,7 @@ p {
     .skills__description, .education__description-list {
         padding-left: 0;
     }
+    .education__img {
+        order: 2;
+    }
 }
