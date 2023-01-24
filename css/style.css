@@ -24,6 +24,19 @@ p {
     gap: 2rem;
     padding: 1rem 1.5rem;
 }
+
+.animation, .animation-next {
+    transition: all 1.5s ease-in-out;
+    transform: translate3d(0, 30px, 0);
+    opacity: 0;
+  }
+
+.animation.active, .animation-next.active {
+    color: #FFF;
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+
 .header {
     padding: 1rem 0;
 }
@@ -62,6 +75,9 @@ p {
 .skills__foto {
     background: rgba(255, 255, 255, 0.2);
     border-radius: 25px;
+}
+.education {
+    padding: 3rem 0;
 }
 .education__img {
     max-width: 470px;
