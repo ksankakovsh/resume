@@ -47,8 +47,11 @@ p {
     padding: 0 2rem;
 }
 .navigation__item:hover {
+    transition: width 350ms ease-in-out;
+    width: 100%;
     color: #D91E50;
-}
+    
+  }
 
 .greeting {
     background: url(../img/bg.gif) center;
@@ -93,4 +96,26 @@ p {
     line-height: 1.5;
     margin-bottom: 1rem;
     color: #fff;
+}
+.social__media {
+    border-radius: 2px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 25px
+}
+
+.social__media-link svg:active,.social__media-link svg:hover {
+    transition-duration: .25s;
+    width: 48px;
+    height: 48px;
+    border-radius: 100px
+}
+.social__media-link svg:active path,.social__media-link svg:hover path {
+    fill: #D91E50
+}
+.footer {
+    background-color: #1F2235;
+    padding: 3rem 0;
 }
